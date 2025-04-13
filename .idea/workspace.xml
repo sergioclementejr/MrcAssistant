@@ -8,55 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="737d0860-3057-4bca-aa3f-467d929fc86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/animation/StageResizeAnimation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/config/SettingsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/controller/BannerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/controller/EmailExcelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/controller/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/controller/SettingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/enums/ViewEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/event/ChangeViewEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/exceptions/ExceptionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/exceptions/ExceptionNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/file/manager/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/model/ControleCondominio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/model/ExclColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/model/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/service/EmailBroadcastService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/javamail.default.address.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/banner-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/css/emailExcel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/emailExcel-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/exception-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/fail-15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/fail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/logo-rsm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/logo-small-rsm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/logo-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/mrc.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/ok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/img/pattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/main-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mchouse/mcrassistant/settings-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compiled/MrcAssistant.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-info-template/project-info.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/service/UpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +35,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -86,15 +56,19 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2rrMoWJerxT90z7qILgK19UyUEK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.App.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.App.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
     "Maven.McrAssistant [--version].executor": "Run",
     "Maven.McrAssistant [clean,compile].executor": "Run",
     "Maven.McrAssistant [clean,install].executor": "Run",
@@ -113,10 +87,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "sc-feature-auto-updater",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/projects/McrAssistant/src/main/resources/com/mchouse/mcrassistant/img",
+    "last_opened_file_path": "C:/dev/projects/_github/MrcAssistant",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -155,19 +129,19 @@
       <command value="mvn compile" />
       <command value="mvn clean javafx:jlink" />
       <command value="mvn clean javafx:jlink -X" />
-      <command value="mvn clean package" />
       <command value="mvn clean package install" />
+      <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../sdk/java/jdk-21.0.5" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-21.0.2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <envs>
         <env name="JAVA_OPTS" value="-Dlog4j2.formatMsgNoLookups=true" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.mchouse.mcrassistant.App" />
-      <module name="McrAssistant" />
+      <module name="MrcAssistant" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mchouse.mcrassistant.controller.*" />
@@ -178,9 +152,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mchouse.mcrassistant.Main" />
+      <module name="MrcAssistant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mchouse.mcrassistant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +217,8 @@
       <workItem from="1742931190620" duration="42000" />
       <workItem from="1743360050013" duration="895000" />
       <workItem from="1744571602072" duration="1733000" />
+      <workItem from="1744574190259" duration="9269000" />
+      <workItem from="1744583478914" duration="795000" />
     </task>
     <servers />
   </component>
@@ -236,11 +230,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="sc-feature-auto-updater" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

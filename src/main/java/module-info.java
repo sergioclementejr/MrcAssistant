@@ -7,6 +7,8 @@ module com.mchouse.mcrassistant {
     requires org.apache.poi.poi;
     requires org.apache.poi.ooxml;
 
+    requires okhttp3;
+
     requires jakarta.mail;
     requires java.logging;
 

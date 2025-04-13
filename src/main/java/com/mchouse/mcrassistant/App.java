@@ -1,11 +1,10 @@
 package com.mchouse.mcrassistant;
 
-import com.mchouse.mcrassistant.controller.MainController;
 import com.mchouse.mcrassistant.config.SettingsManager;
+import com.mchouse.mcrassistant.controller.MainController;
 import com.mchouse.mcrassistant.exceptions.ExceptionNotifier;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
-import javafx.beans.Observable;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -55,12 +54,8 @@ public class App extends Application {
         Scene scene = new Scene(parent);
         scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
 
-        scene.widthProperty().addListener((observable, oldValue, newValue) -> {
-            parent.setClip(getClipArea(scene));
-        });
-        scene.heightProperty().addListener((observable, oldValue, newValue) -> {
-            parent.setClip(getClipArea(scene));
-        });
+        scene.widthProperty().addListener((observable, oldValue, newValue) -> parent.setClip(getClipArea(scene)));
+        scene.heightProperty().addListener((observable, oldValue, newValue) -> parent.setClip(getClipArea(scene)));
 
         stage.setTitle("MCR Assistant");
         stage.setScene(scene);

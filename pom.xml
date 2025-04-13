@@ -6,7 +6,7 @@
 
     <groupId>com.mchouse</groupId>
     <artifactId>MrcAssistant</artifactId>
-    <version>1.0.1.0</version>
+    <version>1.1.1.0</version>
     <name>MrcAssistant</name>
     <inceptionYear>2025</inceptionYear>
     <description>Software de uso exclusivo do Manuel Iglesias para auxiliar em tarefas da MRC Imóveis</description>
@@ -19,6 +19,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.0</junit.version>
+        <property.one>yep</property.one>
     </properties>
 
     <dependencies>
@@ -36,6 +37,12 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-base</artifactId>
             <version>21</version>
+        </dependency>
+        <!-- OkHttp reader -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.11.0</version>
         </dependency>
         <!-- JUNIT -->
         <dependency>
@@ -111,11 +118,43 @@
             <artifactId>maven-shade-plugin</artifactId>
             <version>3.4.0</version>
         </dependency>
-
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>${project.build.directory}/generated-resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>generate-project-info</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/generated-resources</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/project-info-template</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -172,30 +211,12 @@
                 </executions>
             </plugin>
             <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <tasks>
-                                <copy todir="target/jre">
-                                    <fileset dir="bundled-jre"/>
-                                </copy>
-                            </tasks>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>com.akathist.maven.plugins.launch4j</groupId>
                 <artifactId>launch4j-maven-plugin</artifactId>
                 <version>2.5.2</version>
                 <executions>
                     <execution>
-                        <id>l4j-clui</id>
+                        <id>l4j-cli</id>
                         <phase>package</phase>
                         <goals>
                             <goal>launch4j</goal>
@@ -206,7 +227,7 @@
                             <jar>${project.build.directory}/${project.build.finalName}.jar</jar>
                             <dontWrapJar>false</dontWrapJar>
                             <errTitle>MRC Assistant Erro</errTitle>
-                            <downloadUrl>http://java.com/download</downloadUrl>
+                            <downloadUrl>https://www.oracle.com/br/java/technologies/downloads/#java21</downloadUrl>
                             <icon>src/main/resources/com/mchouse/mcrassistant/img/mrc.ico</icon>
                             <classPath>
                                 <mainClass>com.mchouse.mcrassistant.Main</mainClass>
@@ -227,6 +248,28 @@
                                 <txtProductVersion>${project.version}</txtProductVersion>
                                 <productName>${project.name}</productName>
                             </versionInfo>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>clean-and-copy-folder</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <delete dir="${project.build.directory}/compiled" />
+                                <mkdir dir="${project.build.directory}/compiled" />
+                                <copy file="${project.build.directory}/${project.name}.exe"
+                                      tofile="${project.basedir}/compiled/${project.name}.exe" />
+                            </target>
                         </configuration>
                     </execution>
                 </executions>
