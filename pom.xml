@@ -6,7 +6,7 @@
 
     <groupId>com.mchouse</groupId>
     <artifactId>MrcAssistant</artifactId>
-    <version>1.1.1.0</version>
+    <version>1.1.0.0</version>
     <name>MrcAssistant</name>
     <inceptionYear>2025</inceptionYear>
     <description>Software de uso exclusivo do Manuel Iglesias para auxiliar em tarefas da MRC Imóveis</description>

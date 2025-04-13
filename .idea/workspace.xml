@@ -7,18 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="737d0860-3057-4bca-aa3f-467d929fc86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/compiled/MrcAssistant.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-info-template/project-info.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/service/UpdateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="737d0860-3057-4bca-aa3f-467d929fc86b" name="Changes" comment="- Adding update check functionality but without the update action&#10;&#10;- Removing unnecessary files from bundled-jre folder&#10;&#10;- From now on it will always have files in the folders: project-info-template, compiled to be used for update check functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mchouse/mcrassistant/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,8 +209,17 @@
       <workItem from="1743360050013" duration="895000" />
       <workItem from="1744571602072" duration="1733000" />
       <workItem from="1744574190259" duration="9269000" />
-      <workItem from="1744583478914" duration="795000" />
+      <workItem from="1744583478914" duration="1282000" />
     </task>
+    <task id="LOCAL-00001" summary="- Adding update check functionality but without the update action&#10;&#10;- Removing unnecessary files from bundled-jre folder&#10;&#10;- From now on it will always have files in the folders: project-info-template, compiled to be used for update check functionality">
+      <option name="closed" value="true" />
+      <created>1744584647298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744584647298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +250,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="- Adding update check functionality but without the update action&#10;&#10;- Removing unnecessary files from bundled-jre folder&#10;&#10;- From now on it will always have files in the folders: project-info-template, compiled to be used for update check functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Adding update check functionality but without the update action&#10;&#10;- Removing unnecessary files from bundled-jre folder&#10;&#10;- From now on it will always have files in the folders: project-info-template, compiled to be used for update check functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

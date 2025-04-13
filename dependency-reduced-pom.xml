@@ -4,7 +4,7 @@
   <groupId>com.mchouse</groupId>
   <artifactId>MrcAssistant</artifactId>
   <name>MrcAssistant</name>
-  <version>1.1.1.0</version>
+  <version>1.1.0.0</version>
   <description>Software de uso exclusivo do Manuel Iglesias para auxiliar em tarefas da MRC Imóveis</description>
   <inceptionYear>2025</inceptionYear>
   <organization>
@@ -13,6 +13,9 @@
   </organization>
   <build>
     <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
       <resource>
         <filtering>true</filtering>
         <directory>${project.build.directory}/generated-resources</directory>
@@ -100,7 +103,7 @@
         <version>2.5.2</version>
         <executions>
           <execution>
-            <id>l4j-clui</id>
+            <id>l4j-cli</id>
             <phase>package</phase>
             <goals>
               <goal>launch4j</goal>
