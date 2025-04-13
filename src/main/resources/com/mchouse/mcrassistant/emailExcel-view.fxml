@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="890.0" stylesheets="@css/style.css, @css/emailExcel.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mchouse.mcrassistant.controller.EmailExcelController">
+    <VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="890.0">
+        <HBox alignment="CENTER" prefWidth="200.0">
+            <children>
+                <Label fx:id="lbFilePath" maxWidth="600.0" prefHeight="97.0" textOverrun="WORD_ELLIPSIS">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="btnEscolherArquivo" mnemonicParsing="false" onAction="#escolherArquivo" prefHeight="33.0" prefWidth="153.0" styleClass="button" text="Escolher Arquivo">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="822.0" VBox.vgrow="ALWAYS">
+            <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Controle Condominio" GridPane.columnSpan="2">
+            <HBox.margin>
+               <Insets bottom="10.0" top="10.0" />
+            </HBox.margin></Label>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="308.0" spacing="50.0" HBox.hgrow="ALWAYS">
+                <children>
+                    <CheckBox fx:id="cbEnviados" disable="true" mnemonicParsing="false" onAction="#filterEnviados" text="Incluir Enviados">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="cbRetornados" disable="true" mnemonicParsing="false" onAction="#filterRetornados" text="Incluir Retornados">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="cbValidados" disable="true" mnemonicParsing="false" onAction="#filterInvalidos" text="Incluir Inválidos" />
+                </children>
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </HBox>
+        </HBox>
+        <VBox prefHeight="609.0" prefWidth="850.0" spacing="5.0">
+            <children>
+                <TableView fx:id="condominioTable" disable="true" prefHeight="468.0" prefWidth="850.0">
+                    <columns>
+                        <TableColumn fx:id="colImovelLocado" prefWidth="400" text="Imovel Locado" />
+                        <TableColumn fx:id="colLocatario" prefWidth="200" text="Locatario" />
+                        <TableColumn fx:id="colEnvio" styleClass="table-cell-center" text="Enviado" />
+                        <TableColumn fx:id="colRetorno" styleClass="table-cell-center" text="Retornados" />
+                        <TableColumn fx:id="colValidado" styleClass="table-cell-center" text="Validado" />
+                    </columns>
+                </TableView>
+                <HBox>
+                    <children>
+                        <Label fx:id="lbQtdRegistros" text="Quantidade de registros com e-mails: " />
+                        <Label fx:id="lbQtdRegistrosValue" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <HBox fx:id="hBoxSaveConfirmation" alignment="CENTER" opacity="0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@img/ok-15.png" />
+                            <HBox.margin>
+                                <Insets right="7.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="110.0" text="E-mails enviados!" textFill="#116f35" />
+                    </children>
+                </HBox>
+                <Button fx:id="btnEnviarEmail" disable="true" mnemonicParsing="false" onAction="#enviarEmail" prefHeight="33.0" prefWidth="132.0" styleClass="button" text="Enviar Email" />
+            </children>
+        </HBox>
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+    </VBox>
+    <VBox fx:id="vBoxProgressBar" alignment="CENTER_LEFT" layoutX="261.0" layoutY="583.0" prefHeight="61.0" prefWidth="614.0">
+      <Label text="Enviando e-mails...">
+         <VBox.margin>
+            <Insets bottom="5.0" left="130.0" />
+         </VBox.margin></Label>
+            <ProgressBar fx:id="pbEmails" prefHeight="14.0" prefWidth="354.0" progress="0.0" />
+    </VBox>
+</Pane>

@@ -1,0 +1,32 @@
+
+.button{
+    -fx-background-color: #BB3333;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8px 10px 8px 10px;
+
+    -fx-cursor: hand;
+}
+
+
+.button:hover{
+    -fx-background-color: #DD5555;
+}
+
+.button-r-round{
+    -fx-background-color: #BB3333;
+    -fx-background-radius: 0px 5px 5px 0px;
+    -fx-border-radius: 0px 5px 5px 0px;
+    -fx-border-width: 0;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8px 10px 8px 30px;
+
+    -fx-cursor: hand;
+}
+
+.button-r-round:hover{
+    -fx-background-color: #DD5555;
+    -fx-padding: 8px 10px 8px 30px;
+}

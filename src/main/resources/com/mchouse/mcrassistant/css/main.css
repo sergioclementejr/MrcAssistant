@@ -1,0 +1,19 @@
+#header{
+    -fx-background-color: #BB3333;
+    -fx-background-repeat: repeat;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 10, 0.5, 0, .7);
+}
+
+.headerBtn{
+    -fx-background-color: RGB(255,255,255,0);
+    fx-transition: -fx-background-color 2s;
+}
+
+.headerBtn:hover{
+    -fx-background-color: RGB(255,255,255,.1);
+    fx-transition: -fx-background-color 2s;
+}
+
+.rootClass {
+    -fx-background-color: #eeeeee;
+}

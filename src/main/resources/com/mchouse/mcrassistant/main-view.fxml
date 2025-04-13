@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" styleClass="rootClass" alignment="TOP_CENTER" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mchouse.mcrassistant.controller.MainController">
+    <HBox fx:id="header" alignment="CENTER">
+        <Label maxHeight="45.0" minHeight="45.0" prefHeight="45.0" text="MRC Assistant" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+        </Label>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <VBox fx:id="vBoxOpt" alignment="CENTER" managed="false" maxHeight="45.0" maxWidth="50.0" minHeight="45.0"
+              minWidth="50.0" onMouseClicked="#handleOpenOptAction" prefHeight="45.0" prefWidth="50.0"
+              styleClass="headerBtn" visible="false">
+            <ImageView fx:id="imgOpt" fitHeight="20.0" managed="false" preserveRatio="true" visible="false">
+                <Image url="@img/opt-small.png"/>
+            </ImageView>
+            <VBox fx:id="btnBack" alignment="CENTER" fillWidth="false" managed="false" maxHeight="45.0" maxWidth="50.0"
+                  minHeight="45.0" minWidth="50.0" prefHeight="45.0" prefWidth="50.0" styleClass="headerBtn"
+                  visible="false">
+                <Pane>
+                    <Line endX="11.0" endY="1" startX="1" startY="7" stroke="WHITE"/>
+                    <Line endX="11.0" endY="14" startX="1" startY="7" stroke="WHITE"/>
+                </Pane>
+            </VBox>
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+        </VBox>
+        <VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" onMouseClicked="#handleCloseAction" prefHeight="45.0" prefWidth="50.0"
+              styleClass="headerBtn">
+            <Pane>
+                <Line endX="13.0" endY="13.0" startX="0.5" startY="0.5" stroke="WHITE"/>
+                <Line endX="13.0" endY="0.5" startX="0.5" startY="13.0" stroke="WHITE"/>
+            </Pane>
+        </VBox>
+        <VBox.margin>
+            <Insets/>
+        </VBox.margin>
+        <padding>
+            <Insets left="5.0"/>
+        </padding>
+    </HBox>
+    <VBox fx:id="body" VBox.vgrow="ALWAYS"/>
+</VBox>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="359.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mchouse.mcrassistant.controller.BannerController">
+   <children>
+      <ImageView fitHeight="390.0" fitWidth="421.0" layoutX="427.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/skt.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="363.0" fitWidth="431.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/pattern.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="288.0" fitWidth="267.0" layoutX="78.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@img/logo_ass.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

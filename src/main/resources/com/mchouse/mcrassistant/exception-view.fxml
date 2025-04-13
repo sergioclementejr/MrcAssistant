@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="420.0" prefWidth="600.0" styleClass="rootClass" stylesheets="@css/style.css, @css/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mchouse.mcrassistant.controller.ExceptionController">
+    <children>
+        <HBox fx:id="header" alignment="CENTER">
+            <Label maxHeight="45.0" minHeight="45.0" prefHeight="45.0" text="Erro" textFill="WHITE">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="10.0" />
+                </HBox.margin>
+            </Label>
+            <Pane HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" fillWidth="false" maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" onMouseClicked="#handleCloseAction" prefHeight="45.0" prefWidth="45.0" styleClass="headerBtn">
+                <Pane>
+                    <Line endX="13.0" endY="13.0" startX="0.5" startY="0.5" stroke="WHITE" />
+                    <Line endX="13.0" endY="0.5" startX="0.5" startY="13.0" stroke="WHITE" />
+                </Pane>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            </VBox>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets left="5.0" />
+            </padding>
+        </HBox>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+              <Label prefHeight="35.0" prefWidth="277.0" text="Ocorreu um erro">
+                  <font>
+                      <Font name="System Bold" size="24.0" />
+                  </font>
+                  <VBox.margin>
+                      <Insets bottom="10.0" />
+                  </VBox.margin>
+              </Label>
+             <HBox>
+                 <VBox.margin>
+                     <Insets bottom="5.0" />
+                 </VBox.margin>
+                 <Label text="Mensagem do erro:">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font size="13.0" />
+                  </font></Label>
+                 <Label fx:id="lblCauseMsg" text=" ">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font></Label>
+             </HBox>
+
+              <TextArea fx:id="txaErro" editable="false" prefHeight="325.0" prefWidth="580.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+            <children>
+                <Button fx:id="btnConfirmar" mnemonicParsing="false" onMouseClicked="#handleCloseAction" prefHeight="36.0" prefWidth="171.0" text="Confirmar">
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding></Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

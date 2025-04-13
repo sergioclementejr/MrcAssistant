@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" alignment="TOP_CENTER" fillWidth="false" maxWidth="-Infinity" prefHeight="732.0" prefWidth="846.0" spacing="20.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mchouse.mcrassistant.controller.SettingsController">
+    <children>
+      <Label text="Configurações">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="161.0" prefWidth="806.0" spacing="10.0">
+         <children>
+            <VBox prefHeight="114.0" prefWidth="398.0" spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="694.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="E-mail:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtEmail" prefHeight="25.0" prefWidth="310.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="20.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="91.0" text="Alt. E-mail:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtAltEmail" prefHeight="25.0" prefWidth="303.0" />
+                     </children>
+                     <padding>
+                        <Insets right="3.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Token:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtToken" prefHeight="25.0" prefWidth="311.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="7.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="30.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox>
+               <children>
+                  <HBox prefHeight="114.0" prefWidth="396.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="81.0" text="Assinatura:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="txaAssEmail" prefHeight="114.0" prefWidth="308.0" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <Label text="* O site será da MRC adicionado automaticamente na assinatura">
+                     <VBox.margin>
+                        <Insets left="82.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Line endX="800.0" stroke="#b9b9b9">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin></Line>
+      <HBox alignment="CENTER_LEFT" maxWidth="902.0" prefHeight="25.0" prefWidth="902.0" spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Assunto:">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="txtAssunto" prefHeight="25.0" prefWidth="464.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <VBox prefHeight="393.0" prefWidth="806.0">
+         <children>
+            <TextArea fx:id="txaCorpoEmail" prefHeight="341.0" prefWidth="806.0" promptText="Corpo" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label text="* Adicione {imoveis} aonde deseja que as informações dos imoveis sejam inseridas no e-mail." />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="962.0" spacing="10.0">
+         <children>
+            <HBox fx:id="hBoxSaveConfirmation" alignment="CENTER" opacity="0">
+               <children>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                      <Image url="@img/ok-15.png" />
+                     <HBox.margin>
+                        <Insets right="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Configurações salvas!" textFill="#116f35" />
+               </children>
+            </HBox>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#saveSettings" prefHeight="33.0" prefWidth="100.0" text="Salvar" />
+         </children>
+      </HBox>
+    </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
